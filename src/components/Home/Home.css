@@ -1,0 +1,124 @@
+.home {
+  display: flex;
+  flex-direction: column;
+}
+.home-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.left-hero {
+  flex: 1;
+  margin: 0 70px;
+  padding: 20px;
+}
+.left-hero h1 {
+  font-size: 66px;
+  font-weight: 800;
+}
+.left-hero h1 span {
+  color: #efb801;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 3px;
+  letter-spacing: 2px;
+  font-size: 66px;
+  font-weight: 800;
+}
+.left-hero p {
+  margin-bottom: 20px;
+}
+.right-hero {
+  flex: 0.7;
+}
+.right-hero img {
+  width: 660px;
+  margin-right: 5rem;
+  transform: rotate(-22deg);
+}
+.float1 {
+  display: flex;
+  width: 180px;
+  height: 50px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  background-color: rgb(142, 86, 248);
+  position: absolute;
+  top: 30%;
+  left: 45%;
+}
+.float1 span:nth-child(1) {
+  font-size: 32px;
+  color: white;
+}
+.float1 span:nth-child(2) {
+  color: white;
+  padding-left: 20px;
+}
+.float2 {
+  display: flex;
+  width: 150px;
+  height: 50px;
+  padding: 5px 15px;
+  border-radius: 10px;
+  background-color: rgb(159, 75, 255);
+  position: absolute;
+  top: 80%;
+  justify-content: space-between;
+  align-items: center;
+  left: 1100px;
+}
+.float2 div:nth-child(1) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  font-size: 20px;
+  color: white;
+  background-color: orange;
+  border-radius: 50%;
+}
+.float2 span:nth-child(2) {
+  font-size: 12px;
+  margin-left: 5px;
+  color: white;
+}
+.float2 span:nth-child(2) p {
+  font-size: 9px;
+  /* margin-left: 5px; */
+  color: white;
+}
+
+@media (max-width: 700px) {
+  .home-container {
+    flex-direction: column;
+    width: 100%;
+  }
+  .left-hero {
+    margin: 0;
+    text-align: center;
+    flex: initial;
+  }
+  .left-hero h1 {
+    margin-top: 30px;
+    font-size: 30px;
+    font-weight: 800;
+  }
+  .left-hero h1 span {
+    font-size: 30px;
+    font-weight: 800;
+  }
+  .right-hero img {
+    margin-right: initial;
+    width: 270px;
+    transform: rotate(-30deg);
+  }
+  .float2 {
+    display: none;
+  }
+  .float1 {
+    transform: scale(0.6);
+    top: 80%;
+    left: 2%;
+  }
+}

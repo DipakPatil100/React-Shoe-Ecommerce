@@ -1,0 +1,37 @@
+.ser {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+  background-color: rgb(33, 44, 53);
+  color: white;
+  padding: 30px 100px;
+}
+.service-cart img {
+  background-color: yellow;
+  padding: 10px;
+  border-radius: 20px;
+  width: 50px;
+}
+.service-cart {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: left;
+  margin: 0 10px;
+}
+.service-cart div {
+  margin-left: 10px;
+}
+
+@media (max-width: 700px) {
+  .ser {
+    flex-direction: column;
+    gap: 3rem;
+    padding: 20px;
+  }
+  .service-cart {
+    align-items: center;
+    text-align: center;
+  }
+}

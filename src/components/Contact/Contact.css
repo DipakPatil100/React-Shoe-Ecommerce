@@ -1,0 +1,106 @@
+.contact-container {
+  padding: 50px 0;
+  text-align: center;
+}
+.contact-container div {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.con {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.con-left {
+  flex: 1;
+}
+.con-left h3 {
+  margin-bottom: 10px;
+  color: #ffc711;
+  text-shadow: 1px 2px #c9b575;
+}
+.form {
+  display: flex;
+  justify-content: center;
+}
+.form form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.form form input,
+textarea {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #efb801;
+  padding: 0 10px;
+}
+.form form button {
+  padding: 10px !important;
+  width: 80px;
+}
+
+.con-right {
+  flex: 1;
+}
+.con-detail {
+  display: flex;
+  justify-content: space-around;
+}
+.addr {
+  display: flex;
+  flex-direction: column;
+  text-align: left !important;
+}
+.addr h3 {
+  margin-bottom: 2rem;
+  color: #efb801;
+}
+.addr p {
+  margin-bottom: 1rem;
+}
+.addr p span {
+  margin-right: 10px;
+}
+.addr p span i {
+  color: #ffb10a;
+  font-size: 20px;
+}
+.foll-icon h4 {
+  color: #efb801;
+  text-align: left;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+.foll-icon i {
+  margin-right: 25px;
+  font-size: 22px;
+  cursor: pointer;
+  padding: 5px;
+}
+.foll-icon i:hover {
+  color: black;
+  background-color: #efb801;
+  border-radius: 50%;
+  transform: scale(1.2);
+  transition: 0.6s;
+}
+
+@media (max-width: 700px) {
+  .con {
+    text-align: center;
+    flex-direction: column;
+  }
+  .con-detail {
+    flex-direction: column;
+    align-items: center;
+  }
+  .foll-icon h4 {
+    text-align: center;
+  }
+  .foll-icon i {
+    padding-right: 1px;
+  }
+}
